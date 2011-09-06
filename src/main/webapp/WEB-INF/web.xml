@@ -1,0 +1,191 @@
+<!DOCTYPE web-app PUBLIC
+        "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+    <display-name>Wicket Examples</display-name>
+
+    <filter>
+        <filter-name>SimpleBingMapApplication</filter-name>
+        <filter-class>org.apache.wicket.protocol.http.WicketFilter</filter-class>
+        <init-param>
+            <param-name>applicationClassName</param-name>
+            <param-value>com.vk.bingmaps.examples.simple.SimpleBingMapApplication</param-value>
+        </init-param>
+        <init-param>
+            <param-name>BingMapsAPIkey</param-name>
+            <param-value>AjP8SpGkklw0ikJfHaIwn7b-Csg-5ekMyumxo_sG_EgObGXaxw34JyCnAxNCMp4j</param-value>
+        </init-param>
+    </filter>
+
+	<filter>
+		<filter-name>ListenBingMapApplication</filter-name>
+		<filter-class>org.apache.wicket.protocol.http.WicketFilter</filter-class>
+		<init-param>
+		  <param-name>applicationClassName</param-name>
+		  <param-value>com.vk.bingmaps.examples.listen.ListenBingMapApplication</param-value>
+		</init-param>
+		<init-param>
+		  <param-name>BingMapsAPIkey</param-name>
+		  <param-value>AjP8SpGkklw0ikJfHaIwn7b-Csg-5ekMyumxo_sG_EgObGXaxw34JyCnAxNCMp4j</param-value>
+		</init-param>
+	</filter>
+
+    <filter>
+		<filter-name>MarkerBingMapApplication</filter-name>
+		<filter-class>org.apache.wicket.protocol.http.WicketFilter</filter-class>
+		<init-param>
+		  <param-name>applicationClassName</param-name>
+		  <param-value>com.vk.bingmaps.examples.marker.MarkerBingMapApplication</param-value>
+		</init-param>
+		<init-param>
+		  <param-name>BingMapsAPIkey</param-name>
+		  <param-value>AjP8SpGkklw0ikJfHaIwn7b-Csg-5ekMyumxo_sG_EgObGXaxw34JyCnAxNCMp4j</param-value>
+		</init-param>
+	</filter>
+
+    <filter>
+		<filter-name>CustompointBingMapApplication</filter-name>
+		<filter-class>org.apache.wicket.protocol.http.WicketFilter</filter-class>
+		<init-param>
+		  <param-name>applicationClassName</param-name>
+		  <param-value>com.vk.bingmaps.examples.custompoint.CustompointBingMapApplication</param-value>
+		</init-param>
+		<init-param>
+		  <param-name>BingMapsAPIkey</param-name>
+		  <param-value>AjP8SpGkklw0ikJfHaIwn7b-Csg-5ekMyumxo_sG_EgObGXaxw34JyCnAxNCMp4j</param-value>
+		</init-param>
+	</filter>
+
+    <filter>
+		<filter-name>RefreshPointBingMapApplication</filter-name>
+		<filter-class>org.apache.wicket.protocol.http.WicketFilter</filter-class>
+		<init-param>
+		  <param-name>applicationClassName</param-name>
+		  <param-value>com.vk.bingmaps.examples.refreshpoint.RefreshPointBingMapApplication</param-value>
+		</init-param>
+		<init-param>
+		  <param-name>BingMapsAPIkey</param-name>
+		  <param-value>AjP8SpGkklw0ikJfHaIwn7b-Csg-5ekMyumxo_sG_EgObGXaxw34JyCnAxNCMp4j</param-value>
+		</init-param>
+	</filter>
+
+    <filter>
+		<filter-name>ListenBPushpinApplication</filter-name>
+		<filter-class>org.apache.wicket.protocol.http.WicketFilter</filter-class>
+		<init-param>
+		  <param-name>applicationClassName</param-name>
+		  <param-value>com.vk.bingmaps.examples.listen.overlay.simple.ListenBPushpinApplication</param-value>
+		</init-param>
+		<init-param>
+		  <param-name>BingMapsAPIkey</param-name>
+		  <param-value>AjP8SpGkklw0ikJfHaIwn7b-Csg-5ekMyumxo_sG_EgObGXaxw34JyCnAxNCMp4j</param-value>
+		</init-param>
+	</filter>
+
+	<filter>
+		<filter-name>AdvancedListenBPushpinApplication</filter-name>
+		<filter-class>org.apache.wicket.protocol.http.WicketFilter</filter-class>
+		<init-param>
+		  <param-name>applicationClassName</param-name>
+		  <param-value>com.vk.bingmaps.examples.listen.overlay.advanced.ListenBPushpinApplication</param-value>
+		</init-param>
+		<init-param>
+		  <param-name>BingMapsAPIkey</param-name>
+		  <param-value>AjP8SpGkklw0ikJfHaIwn7b-Csg-5ekMyumxo_sG_EgObGXaxw34JyCnAxNCMp4j</param-value>
+		</init-param>
+	</filter>
+
+    <filter>
+		<filter-name>ManyBingMapApplication</filter-name>
+		<filter-class>org.apache.wicket.protocol.http.WicketFilter</filter-class>
+		<init-param>
+		  <param-name>applicationClassName</param-name>
+		  <param-value>com.vk.bingmaps.examples.many.ManyBingMapApplication</param-value>
+		</init-param>
+		<init-param>
+		  <param-name>BingMapsAPIkey</param-name>
+		  <param-value>AjP8SpGkklw0ikJfHaIwn7b-Csg-5ekMyumxo_sG_EgObGXaxw34JyCnAxNCMp4j</param-value>
+		</init-param>
+	</filter>
+
+    <filter>
+		<filter-name>InfoWindowBingMapApplication</filter-name>
+		<filter-class>org.apache.wicket.protocol.http.WicketFilter</filter-class>
+		<init-param>
+		  <param-name>applicationClassName</param-name>
+		  <param-value>com.vk.bingmaps.examples.info.InfoWindowBingMapApplication</param-value>
+		</init-param>
+		<init-param>
+		  <param-name>BingMapsAPIkey</param-name>
+		  <param-value>AjP8SpGkklw0ikJfHaIwn7b-Csg-5ekMyumxo_sG_EgObGXaxw34JyCnAxNCMp4j</param-value>
+		</init-param>
+	</filter>
+
+    <filter>
+		<filter-name>ClusteringBingMapApplication</filter-name>
+		<filter-class>org.apache.wicket.protocol.http.WicketFilter</filter-class>
+		<init-param>
+		  <param-name>applicationClassName</param-name>
+		  <param-value>com.vk.bingmaps.examples.clustering.ClusteringBingMapApplication</param-value>
+		</init-param>
+		<init-param>
+		  <param-name>BingMapsAPIkey</param-name>
+		  <param-value>Aump8v2ed4lsiPLIto3MI175IY0EyiKZwSZcEGcvNQ61ZyNeohIgKfaibatfph3a</param-value>
+		</init-param>
+	</filter>
+
+    <filter-mapping>
+        <filter-name>SimpleBingMapApplication</filter-name>
+        <url-pattern>/simple/*</url-pattern>
+    </filter-mapping>
+
+    <filter-mapping>
+		<filter-name>ListenBingMapApplication</filter-name>
+		<url-pattern>/listen/*</url-pattern>
+	</filter-mapping>
+
+	<filter-mapping>
+		<filter-name>MarkerBingMapApplication</filter-name>
+		<url-pattern>/marker/*</url-pattern>
+	</filter-mapping>
+
+    <filter-mapping>
+		<filter-name>CustompointBingMapApplication</filter-name>
+		<url-pattern>/custompoint/*</url-pattern>
+	</filter-mapping>
+
+	<filter-mapping>
+		<filter-name>RefreshPointBingMapApplication</filter-name>
+		<url-pattern>/refreshpoint/*</url-pattern>
+	</filter-mapping>
+
+	<filter-mapping>
+		<filter-name>ListenBPushpinApplication</filter-name>
+		<url-pattern>/markerListener/*</url-pattern>
+	</filter-mapping>
+
+	<filter-mapping>
+		<filter-name>AdvancedListenBPushpinApplication</filter-name>
+		<url-pattern>/markerListenerAdvanced/*</url-pattern>
+	</filter-mapping>
+
+    <filter-mapping>
+		<filter-name>ManyBingMapApplication</filter-name>
+		<url-pattern>/many/*</url-pattern>
+	</filter-mapping>
+
+    <filter-mapping>
+		<filter-name>InfoWindowBingMapApplication</filter-name>
+		<url-pattern>/info/*</url-pattern>
+	</filter-mapping>
+
+    <filter-mapping>
+		<filter-name>ClusteringBingMapApplication</filter-name>
+		<url-pattern>/clustering/*</url-pattern>
+	</filter-mapping>
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>

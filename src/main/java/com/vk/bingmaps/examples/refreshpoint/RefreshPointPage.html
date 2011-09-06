@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:v="urn:schemas-microsoft-com:vml"
+	xmlns:wicket="http://wicket.sourceforge.net/">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>Wicket Examples - BingMap Panel</title>
+<style type="text/css">
+    v\:* {
+      behavior:url(#default#VML);
+    }
+</style>
+<link rel="stylesheet" type="text/css" href="./css/style.css" />
+<script type="text/javascript">
+	function bingmapClearTimeout() {
+		window.clearTimeout(window.BingmapAutoTimer);
+		var feedback = document.getElementById('feedback');
+		feedback.innerHTML = "The auto refresh is off";
+	}
+</script>
+</head>
+
+<body>
+
+<span wicket:id="mainNavigation" />
+
+<p>
+The overlays are updated every 5 seconds
+</p>
+
+<center>
+	<div wicket:id="map" style="width: 600px; height: 400px;">Map</div>
+	<br>
+	<button onclick="bingmapClearTimeout();">stopTimer</button>
+	<p id="feedback"></p>
+</center>
+
+</body>
+</html>

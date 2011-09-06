@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:v="urn:schemas-microsoft-com:vml"
+	xmlns:wicket="http://wicket.sourceforge.net/">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Wicket Examples - BingMap Panel</title>
+<style type="text/css">
+    v\:* {
+      behavior:url(#default#VML);
+    }
+</style>
+<link rel="stylesheet" type="text/css" href="./css/style.css" />
+</head>
+
+<body>
+<span wicket:id="mainNavigation"/>
+First listen to the map! Then manipulate it!<br>
+Click on the map and a marker will be created on the map.
+<div wicket:id="topPanel" style="position:relative; width:100%; height:500px;"></div>
+
+<br/>
+
+Data Size: <input type="text" id="dataSize" wicket:id="dataSize"/><br/>
+<input type="button" value="Generate And Cluster Pushpins" wicket:id="generatePushpins"/>
+</body>
+</html>
