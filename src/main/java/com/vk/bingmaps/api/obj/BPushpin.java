@@ -55,6 +55,10 @@ public class BPushpin extends BOverlay {
         return null == options ? null : options.clone();
     }
 
+    public BLocation getLocation() {
+        return location;
+    }
+
     /**
 	 * Set the location.
 	 *

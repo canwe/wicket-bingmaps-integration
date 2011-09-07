@@ -145,9 +145,29 @@ public class HomePage extends WicketExamplePage
                 map.addOverlay(pushpin);
 
                 pushpin.addListener(BEvent.click, new BEventHandler() {
+
+                    private BInfobox infobox;
+
                     @Override
                     public void onEvent(AjaxRequestTarget target) {
 
+                        while (infobox == null || (infobox.getVisible() != null && !infobox.getVisible())) {
+
+                            BInfoboxOptions infoboxOptions = new BInfoboxOptions();
+                            infoboxOptions.setDescription("My Description");
+                            infoboxOptions.setTitle("My Title");
+
+                            infobox = new BInfobox(pushpin.getLocation(), infoboxOptions);
+                            map.addOverlay(infobox);
+                            infobox.addListener(BEvent.entitychanged, new BEventHandler() {
+                                @Override
+                                public void onEvent(AjaxRequestTarget target) {
+                                    if (infobox.getVisible() != null && !infobox.getVisible()) {
+                                        map.removeOverlay(infobox);
+                                    }
+                                }
+                            });
+                        }
                     }
                 });
 			}
