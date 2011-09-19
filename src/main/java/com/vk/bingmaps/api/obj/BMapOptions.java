@@ -48,6 +48,8 @@ public class BMapOptions implements Serializable, Cloneable {
     private boolean useInertia = true;
     private int tileBuffer = 0;
     private float inertiaIntensity = 0.85f;
+    private Integer zoom;
+    private BLocation center;
 
     private boolean clusteringEnabled = false;
 
@@ -239,6 +241,22 @@ public class BMapOptions implements Serializable, Cloneable {
         this.clusteringEnabled = clusteringEnabled;
     }
 
+    public BLocation getCenter() {
+        return center;
+    }
+
+    public void setCenter(BLocation center) {
+        this.center = center;
+    }
+
+    public Integer getZoom() {
+        return zoom;
+    }
+
+    public void setZoom(Integer zoom) {
+        this.zoom = zoom;
+    }
+
     public String getJSconstructor()
 	{
 		ObjectLiteral literal = new ObjectLiteral();
@@ -319,6 +337,14 @@ public class BMapOptions implements Serializable, Cloneable {
 		{
 			literal.set("backgroundColor", backgroundColor.getJSconstructor());
 		}
+		if(zoom != null)
+		{
+			literal.set("zoom", zoom.toString());
+		}
+		if(center != null)
+		{
+			literal.set("center", center.getJSconstructor());
+		}
 
 		return literal.toJS();
 	}
@@ -351,6 +377,8 @@ public class BMapOptions implements Serializable, Cloneable {
 		result = PRIME * result + ((height == null) ? 0 : height.hashCode());
 		result = PRIME * result + ((width == null) ? 0 : width.hashCode());
 		result = PRIME * result + ((backgroundColor == null) ? 0 : backgroundColor.hashCode());
+		result = PRIME * result + ((zoom == null) ? 0 : zoom.hashCode());
+		result = PRIME * result + ((center == null) ? 0 : center.hashCode());
 		return result;
 	}
 
@@ -395,6 +423,14 @@ public class BMapOptions implements Serializable, Cloneable {
 			if (other.credentials != null) return false;
 		}
 		else if (!credentials.equals(other.credentials)) return false;
+		if (zoom == null) {
+			if (other.zoom != null) return false;
+		}
+		else if (!zoom.equals(other.zoom)) return false;
+		if (center == null) {
+			if (other.center != null) return false;
+		}
+		else if (!center.equals(other.center)) return false;
 		return true;
 	}
 

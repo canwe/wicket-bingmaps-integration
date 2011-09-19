@@ -42,6 +42,7 @@ public class HomePage extends WicketExamplePage
 			@Override
 			protected void onTileDownloadComplete(AjaxRequestTarget target)
 			{
+                System.out.println("TileDownloadComplete");
 				target.addComponent(boundsLabel);
 			}
 		});
@@ -139,6 +140,7 @@ public class HomePage extends WicketExamplePage
 		@Override
 		protected void onViewChangeEnd(AjaxRequestTarget target)
 		{
+            System.out.println("ViewChangeEnd");
 			target.addComponent(zoomLabel);
 			target.addComponent(boundsLabel);
 

@@ -58,7 +58,7 @@ public class HomePage extends WicketExamplePage
                 if (options == null) {
                     options = new BPushpinOptions();
                 }
-                if (i % 2 == 1) {
+                if (i % 2 == 0) {
                     options.setHeight((int) (39 * 1.4));
                     options.setWidth((int) (25 * 1.4));
                     options.setIcon(bigIcon);

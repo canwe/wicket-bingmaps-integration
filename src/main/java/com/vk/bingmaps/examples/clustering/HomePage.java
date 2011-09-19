@@ -2,6 +2,7 @@ package com.vk.bingmaps.examples.clustering;
 
 import com.vk.bingmaps.api.BingMap;
 import com.vk.bingmaps.api.event.ClickListener;
+import com.vk.bingmaps.api.event.TileDownloadCompleteListener;
 import com.vk.bingmaps.api.obj.*;
 import com.vk.bingmaps.examples.BMapExampleApplication;
 import com.vk.bingmaps.examples.WicketExamplePage;
@@ -55,6 +56,14 @@ public class HomePage extends WicketExamplePage
 				}
 			}
 		});
+        map.add(new TileDownloadCompleteListener() {
+            @Override
+            protected void onTileDownloadComplete(AjaxRequestTarget target) {
+                BPushpinOptions options = new BPushpinOptions();
+                options.setText("*");
+                map.setClusteredPushpinOptions(options);
+            }
+        });
 
         sizeTextField = new TextField<Integer>("dataSize", Model.<Integer>of());
         sizeTextField.setType(int.class);
@@ -90,14 +99,19 @@ public class HomePage extends WicketExamplePage
                         options.setHeight(39);
                         options.setWidth(25);
                         options.setDraggable(true);
-                        list.add(new BPushpin(BLocation.LatLng((float)randomLatitude,
-                                                               (float)randomLongitude),
-                                                               options));
-                        //map.addOverlay(new BPushpin(BLocation.LatLng((float)randomLatitude,
-                        //                                             (float)randomLongitude)));
+                        final BPushpin pushpin = new BPushpin(BLocation.LatLng((float)randomLatitude, (float)randomLongitude), options);
+                        list.add(pushpin);
                         dataSize--;
                     }
-                    map.addOverlays(list);
+                    map.addOverlays(list); //must be invoked first
+                    for (final BOverlay ovl : list) {
+                        ovl.addListener(BEvent.dragend, new BEventHandler() {
+                            @Override
+                            public void onEvent(AjaxRequestTarget target) {
+                                System.out.println("DragEnd::" + ((BPushpin)ovl).getLocation());
+                            }
+                        });
+                    }
                     map.placeClusteredPushpins();
                 } catch (Throwable tx) {
                     //;

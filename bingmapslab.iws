@@ -64,30 +64,82 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="BingMap.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/vk/bingmaps/api/BingMap.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="176" column="31" selection-start="5364" selection-end="5364" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BOverlay.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/vk/bingmaps/api/obj/BOverlay.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="138" column="65" selection-start="3440" selection-end="3440" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClusteringBingMapApplication.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/vk/bingmaps/examples/clustering/ClusteringBingMapApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="13" selection-start="252" selection-end="252" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="V7ClientSideClustering.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/vk/bingmaps/api/V7ClientSideClustering.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="330" column="12" selection-start="11476" selection-end="11476" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="wicket-bingmap.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/vk/bingmaps/api/wicket-bingmap.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="33" selection-start="659" selection-end="659" vertical-scroll-proportion="0.0">
+            <state line="348" column="37" selection-start="12228" selection-end="12228" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/vk/bingmaps/api/package.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="20" selection-start="712" selection-end="712" vertical-scroll-proportion="0.29704303">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="HomePage.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/vk/bingmaps/examples/info/HomePage.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/vk/bingmaps/examples/listen/overlay/simple/HomePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="163" column="50" selection-start="6729" selection-end="6729" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="57" column="13" selection-start="2106" selection-end="2106" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BPushpin.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/vk/bingmaps/api/obj/BPushpin.java">
+      <file leaf-file-name="HomePage.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/vk/bingmaps/examples/marker/HomePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="36" selection-start="1412" selection-end="1412" vertical-scroll-proportion="0.0">
+            <state line="46" column="31" selection-start="1561" selection-end="1561" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HomePage.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/vk/bingmaps/examples/marker/HomePage.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="58" selection-start="889" selection-end="889" vertical-scroll-proportion="-17.653847">
               <folding />
             </state>
           </provider>
@@ -96,54 +148,7 @@
       <file leaf-file-name="HomePage.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/vk/bingmaps/examples/clustering/HomePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="88" column="94" selection-start="3055" selection-end="3055" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="V7ClientSideClustering.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/vk/bingmaps/api/V7ClientSideClustering.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BPushpinOptions.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/vk/bingmaps/api/obj/BPushpinOptions.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="33" selection-start="485" selection-end="485" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BOverlayOptions.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/vk/bingmaps/api/obj/BOverlayOptions.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="2" selection-start="165" selection-end="165" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="184" column="40" selection-start="6347" selection-end="6347" vertical-scroll-proportion="1.4111544">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BInfoboxOptions.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/vk/bingmaps/api/obj/BInfoboxOptions.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="40" selection-start="1107" selection-end="1107" vertical-scroll-proportion="0.0">
+            <state line="115" column="35" selection-start="4416" selection-end="4416" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -159,22 +164,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/vk/bingmaps/api/js/ArrayLiteral.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/vk/bingmaps/api/V7ClientSideClustering.js" />
-        <option value="$PROJECT_DIR$/src/main/java/com/vk/bingmaps/api/obj/BMapOptions.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/vk/bingmaps/examples/listen/overlay/simple/HomePage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/vk/bingmaps/api/obj/BInfobox.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/vk/bingmaps/api/obj/BInfoboxOptions.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/vk/bingmaps/api/obj/BPushpinOptions.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/vk/bingmaps/api/obj/BOverlay.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/vk/bingmaps/examples/marker/HomePage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/vk/bingmaps/api/obj/BOverlayOptions.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/vk/bingmaps/api/BingMap.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/vk/bingmaps/api/wicket-bingmap.js" />
-        <option value="$PROJECT_DIR$/src/main/java/com/vk/bingmaps/examples/clustering/HomePage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/vk/bingmaps/api/obj/BPushpin.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/vk/bingmaps/examples/info/HomePage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vk/bingmaps/api/obj/BEventHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vk/bingmaps/api/obj/BEvent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vk/bingmaps/api/obj/BColor.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vk/bingmaps/api/obj/BViewOptions.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vk/bingmaps/examples/listen/HomePage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vk/bingmaps/api/obj/BMapOptions.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vk/bingmaps/api/BingMap.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vk/bingmaps/api/V7ClientSideClustering.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vk/bingmaps/examples/marker/HomePage.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vk/bingmaps/examples/marker/HomePage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vk/bingmaps/examples/listen/overlay/simple/HomePage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vk/bingmaps/examples/clustering/HomePage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vk/bingmaps/api/wicket-bingmap.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vk/bingmaps/api/package.html" />
       </list>
     </option>
   </component>
@@ -275,58 +280,6 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bingmapslab" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bingmapslab" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bingmapslab" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bingmapslab" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -351,10 +304,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="bingmaps" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="examples" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -391,35 +340,36 @@
         </subPane>
       </pane>
       <pane id="Favorites" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Modules" />
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="OverrideImplement.combined" value="true" />
-    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
-    <property name="recentsLimit" value="5" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="OverrideImplement.combined" value="true" />
     <property name="MemberChooser.sorted" value="false" />
+    <property name="recentsLimit" value="5" />
     <property name="MemberChooser.showClasses" value="true" />
-    <property name="project.structure.side.proportion" value="0.2" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.vk.bingmaps.examples.clustering" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Books\bingmapslab\src\main\java\com\vk\bingmaps\api" />
       <recent name="C:\Books\bingmapslab\src\main\java\com\vk\bingmaps\examples\listen\overlay\simple" />
       <recent name="C:\Books\bingmapslab\src\main\java\com\vk\bingmaps\examples\clustering" />
       <recent name="C:\Books\bingmapslab\src\main\java\com\vk\bingmaps\examples\custompoint" />
     </key>
   </component>
-  <component name="RunManager" selected="Maven.install">
+  <component name="RunManager" selected="Maven.jetty:run">
     <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings">
@@ -775,25 +725,25 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="3" y="0" width="1267" height="971" extended-state="0" />
+    <frame x="0" y="0" width="1280" height="970" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293124" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850242" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39927623" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29306123" sideWeight="0.6084337" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32921812" sideWeight="0.63329315" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39933994" sideWeight="0.63329315" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34320986" sideWeight="0.63329315" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3990228" sideWeight="0.63329315" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34201956" sideWeight="0.6425121" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36670688" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35748792" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -834,120 +784,114 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vk/bingmaps/examples/listen/HomePage.html">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vk/bingmaps/examples/listen/HomePage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="21" column="39" selection-start="805" selection-end="805" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vk/bingmaps/api/obj/BMapOptions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="239" column="16" selection-start="6478" selection-end="6478" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vk/bingmaps/examples/custompoint/CustomPointPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="0" selection-start="819" selection-end="819" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/vk/bingmaps/examples/marker/HomePage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="27" column="58" selection-start="889" selection-end="889" vertical-scroll-proportion="-17.653847">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vk/bingmaps/api/obj/BOverlay.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vk/bingmaps/examples/listen/overlay/simple/HomePage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="26" selection-start="657" selection-end="657" vertical-scroll-proportion="0.0">
+        <state line="57" column="13" selection-start="2106" selection-end="2106" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vk/bingmaps/api/BingMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="177" column="76" selection-start="5321" selection-end="5321" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/vk/bingmaps/examples/marker/HomePage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="54" selection-start="1110" selection-end="1291" vertical-scroll-proportion="0.0">
+        <state line="46" column="31" selection-start="1561" selection-end="1561" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vk/bingmaps/examples/clustering/HomePage.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vk/bingmaps/api/js/ArrayLiteral.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="94" selection-start="3055" selection-end="3055" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vk/bingmaps/api/obj/BPushpinOptions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="33" selection-start="485" selection-end="485" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vk/bingmaps/api/obj/BOverlayOptions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="2" selection-start="165" selection-end="165" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vk/bingmaps/api/V7ClientSideClustering.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vk/bingmaps/api/obj/BPushpin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="36" selection-start="1412" selection-end="1412" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vk/bingmaps/examples/info/HomePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="163" column="50" selection-start="6729" selection-end="6729" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vk/bingmaps/api/obj/BInfoboxJSAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="13" selection-start="159" selection-end="159" vertical-scroll-proportion="0.1734694">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vk/bingmaps/api/obj/BInfoboxAjaxAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="13" selection-start="159" selection-end="159" vertical-scroll-proportion="0.1734694">
+        <state line="31" column="18" selection-start="969" selection-end="969" vertical-scroll-proportion="0.63090676">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/vk/bingmaps/api/obj/BInfoboxOptions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="40" selection-start="1107" selection-end="1107" vertical-scroll-proportion="0.0">
+        <state line="155" column="31" selection-start="4680" selection-end="4680" vertical-scroll-proportion="0.33333334">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vk/bingmaps/examples/clustering/ClusteringBingMapApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="13" selection-start="252" selection-end="252" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vk/bingmaps/api/V7ClientSideClustering.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="330" column="12" selection-start="11476" selection-end="11476" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vk/bingmaps/api/obj/BEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="18" selection-start="1065" selection-end="1065" vertical-scroll-proportion="0.6091954">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vk/bingmaps/api/obj/BOverlay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="138" column="65" selection-start="3440" selection-end="3440" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vk/bingmaps/api/BingMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="176" column="31" selection-start="5364" selection-end="5364" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vk/bingmaps/examples/clustering/HomePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="115" column="35" selection-start="4416" selection-end="4416" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/vk/bingmaps/api/wicket-bingmap.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="33" selection-start="659" selection-end="659" vertical-scroll-proportion="0.0">
+        <state line="348" column="37" selection-start="12228" selection-end="12228" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vk/bingmaps/api/package.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="184" column="40" selection-start="6347" selection-end="6347" vertical-scroll-proportion="1.4111544">
+        <state line="13" column="20" selection-start="712" selection-end="712" vertical-scroll-proportion="0.29704303">
           <folding />
         </state>
       </provider>

@@ -171,7 +171,7 @@ public class BingMap extends Panel
 	 * @param overlaysToAdd overlays to add
 	 * @return This
 	 */
-	public BingMap addOverlays(Collection<BOverlay> overlaysToAdd)
+	public <T extends Collection<? extends BOverlay>> BingMap addOverlays(T overlaysToAdd)
 	{
 		overlays.addAll(overlaysToAdd);
         ArrayLiteral arLiteral = new ArrayLiteral();
@@ -330,6 +330,44 @@ public class BingMap extends Panel
 	}
 
 	/**
+	 * Set the view options.
+	 *
+	 * @param pushpinOptions options to set
+	 */
+	public void setClusteredPushpinOptions(BPushpinOptions pushpinOptions)
+	{
+		if (null != pushpinOptions)
+		{
+			if (AjaxRequestTarget.get() != null && findPage() != null)
+			{
+				AjaxRequestTarget.get().appendJavascript(getJSinvoke("myLayer.setClusteredPushpinOptions(" + pushpinOptions.getJSconstructor() + ")"));
+			}
+		}
+	}
+
+	/**
+	 * lockMap
+	 */
+	public void lockMap()
+	{
+    	if (AjaxRequestTarget.get() != null && findPage() != null)
+		{
+			AjaxRequestTarget.get().appendJavascript(getJSinvoke("lockMap()"));
+		}
+	}
+
+	/**
+	 * unlockMap
+	 */
+	public void unlockMap()
+	{
+    	if (AjaxRequestTarget.get() != null && findPage() != null)
+		{
+			AjaxRequestTarget.get().appendJavascript(getJSinvoke("unlockMap()"));
+		}
+	}
+
+	/**
 	 * placeClusteredPushpins
 	 */
 	public void placeClusteredPushpins()
@@ -352,7 +390,7 @@ public class BingMap extends Panel
     }
 
     public BViewOptions getViewOptions() {
-        return viewOptions;
+        return null == viewOptions ? null : viewOptions.clone();
     }
 
     /**

@@ -17,6 +17,7 @@ function WicketBingMap(id, options){
     this.overlaysOptions = {};
     this.myLayer = {};  //clustering
     this.pushpins = {};
+    this.lockEvent = {};
 
     this.onEvent = function(callBack, params){
         params['center'] = this.map.getCenter();
@@ -78,13 +79,13 @@ function WicketBingMap(id, options){
         var self = this;
         var overlay = this.overlays[overlayID];
 
-        var overlayListenersId = '' + overlayID + ':' + event;
+        //var overlayListenersId = '' + overlayID + ':' + event;
         //http://www.artlebedev.ru/tools/technogrette/js/likbez/
-        if (!isArray(this.listeners[overlayListenersId])) {
-            this.listeners[overlayListenersId] = new Array();
+        if (!isArray(this.listeners[overlayID])) {
+            this.listeners[overlayID] = new Array();
         }
 
-        var ovListenerId = Microsoft.Maps.Events.addHandler(overlay, event, function(e){
+        var handler = function(e) {
             var params = {};
             for (var p = 0; p < arguments.length; p++) {
                 if (arguments[p] != null) {
@@ -116,21 +117,28 @@ function WicketBingMap(id, options){
             params['overlay.event'] = event;
 
             self.onEvent(self.overlayListenerCallbackUrl, params);
-        });
+        }
+        var ovListenerId = Microsoft.Maps.Events.addHandler(overlay, event, handler);
         //http://alljs.ru/articles/array/manipulations
-        this.listeners[overlayListenersId].push(ovListenerId);
+        this.listeners[overlayID].push({'event': event, 'ovListenerId': ovListenerId, 'handler': handler});
     }
 
     this.clearOverlayListeners = function(overlayID, event){
         var self = this;
         var overlay = this.overlays[overlayID];
 
-        var overlayListenersId = '' + overlayID + ':' + event;
-        if (isArray(this.listeners[overlayListenersId])) {
-            this.listeners[overlayListenersId].forEach(function(object, index) {
-                Microsoft.Maps.Events.removeHandler(object);
+        if (isArray(this.listeners[overlayID])) {
+            var idsToRemove = new Array();
+            this.listeners[overlayID].forEach(function(object, index) {
+                if (object['event'] == event) {
+                    Microsoft.Maps.Events.removeHandler(object['ovListenerId']);
+                    idsToRemove.push(index);
+                }
             });
-            this.listeners[overlayListenersId].length = 0;
+            idsToRemove.forEach(function(object, index) {
+                self.listeners[overlayID].splice(object, 1);
+            });
+            //this.listeners[overlayListenersId].length = 0;
         }
     }
 
@@ -268,6 +276,24 @@ function WicketBingMap(id, options){
         this.map.dispose();
     }
 
+    // When the mouse is used, the cancelEvent function will
+    // get called. Setting the handled property to true will
+    // disable the mousemove event, which disables panning.
+    function cancelEvent(e)
+    {
+        e.handled = true;
+    }
+
+    this.lockMap = function() {
+        // Attach an event handler for a mousemove event.
+        this.lockEvent = Microsoft.Maps.Events.addHandler(this.map, "mousemove", cancelEvent);
+    }
+
+    this.unlockMap = function() {
+        // Remove an event handler for a mousemove event.
+        Microsoft.Maps.Events.removeHandler(this.lockEvent);
+    }
+
     this.initializeClustering = function() {
        var self = this;
        self.myLayer = new ClusteredEntityCollection(self.map, {
@@ -278,15 +304,17 @@ function WicketBingMap(id, options){
     }
 
     this.createPin = function (data) {
-	    var pin = new Microsoft.Maps.Pushpin(data._LatLong, data.Options);
+	    var pin = data.Pushpin || new Microsoft.Maps.Pushpin(data._LatLong, data.Options);
 
-	    pin.title = "Single Location";
+        pin.title = "Single Location";
 	    pin.description = "GridKey: " + data.GridKey;
         return pin;
 	}
 
-	this.createClusteredPin = function (cluster, latlong) {
-	    var pin = new Microsoft.Maps.Pushpin(latlong, { text: '+' });
+	this.createClusteredPin = function (cluster, latlong, opts) {
+	    var opts1 = isEmpty(opts) ? { text: '+' } : opts;
+	    opts1.text = '' + cluster.length;
+	    var pin = new Microsoft.Maps.Pushpin(latlong, opts1);
         pin.title = "Cluster";
 	    pin.description = "GridKey: " + cluster[0].GridKey + "<br/>Cluster Size: " + cluster.length + "<br/>Zoom in for more details.";
         return pin;
@@ -298,6 +326,7 @@ function WicketBingMap(id, options){
         {
             //data.push(this.pushpins[prop]);
             data.push(new ExampleDataModel("Point: " + i ++,
+                                           this.pushpins[prop],
                                            this.pushpins[prop].getLocation().latitude,
                                            this.pushpins[prop].getLocation().longitude,
                                            this.overlaysOptions[prop]));
@@ -309,8 +338,9 @@ function WicketBingMap(id, options){
     /*
      * Example data model that may be returned from a custom web service.
      */
-     var ExampleDataModel = function (name, latitude, longitude, options) {
+     var ExampleDataModel = function (name, pushpin, latitude, longitude, options) {
         this.Name = name;
+        this.Pushpin = pushpin;
         this.Latitude = latitude;
         this.Longitude = longitude;
         this.Options = options;
@@ -333,6 +363,7 @@ function toStr(obj) {
 
 //http://stackoverflow.com/questions/4994201/is-object-empty
 function isEmpty(obj) {
+    if (typeof obj === "undefined") return true;
     // Speed up calls to hasOwnProperty
     var hasOwnProperty = Object.prototype.hasOwnProperty;
 

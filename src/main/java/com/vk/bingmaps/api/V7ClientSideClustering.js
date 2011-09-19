@@ -77,9 +77,15 @@ var ClusteredEntityCollection = function (map, options) {
         _numXCells, 
         _numYCells;
 
+    this.setClusteredPushpinOptions = function(o) {
+       _options.clusteredPushpinOptions = o;
+    }
+
     var _options = {
         //The size of the grid cells for clustering in pixels
         gridSize: 45,
+
+        clusteredPushpinOptions: {},
 
         //The cluster placement type
         clusterPlacementType: ClusterPlacementTypes.MeanAverage,
@@ -211,7 +217,7 @@ var ClusteredEntityCollection = function (map, options) {
                                     break;
                                 default:
                                     var latlong = calculateClusteredLatlong(gridCells[i], i);
-                                    pin = _options.clusteredPinCallback(gridCells[i], latlong);
+                                    pin = _options.clusteredPinCallback(gridCells[i], latlong, _options.clusteredPushpinOptions);
                                     pin.isClustered = true;
                                     break;
                             }

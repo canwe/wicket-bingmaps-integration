@@ -24,7 +24,7 @@ import java.io.Serializable;
  *         Date: 03.08.11
  * <a href="http://msdn.microsoft.com/en-us/library/gg427628.aspx">ViewOptions Object</a>.
  */
-public class BViewOptions implements Serializable {
+public class BViewOptions implements Serializable, Cloneable {
 
     /**
 	 * Default serialVersionUID.
@@ -223,6 +223,17 @@ public class BViewOptions implements Serializable {
     public String getJSsetView(BingMap map)
 	{
 		return map.getJSinvoke("setView(" + toString() + ")");
+	}
+
+    public BViewOptions clone() {
+		try
+		{
+			return (BViewOptions)super.clone();
+		}
+		catch (CloneNotSupportedException e)
+		{
+			throw new Error(e);
+		}
 	}
 
 }
